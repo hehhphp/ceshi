@@ -30,7 +30,7 @@ class Index
         $data['pwd'] = md5('123456');
         $request = Request::instance();
         $admin = new Admin();
-        dump($data);
+        dump($data2);
         $result = $admin->insertData($data);
         if($result){
             $this->success("新增成功！","index/test");
